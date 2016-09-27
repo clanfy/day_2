@@ -76,18 +76,18 @@ class Functions_Practice < MiniTest::Test
   # #Given the radius of a sphere calculate the volume
   # #Try using Ruby's PI value!
   def test_volume_of_sphere()
-    volume_of_sphere_result = volume_of_sphere( 1 )
-    assert_equal( 4.19 , volume_of_sphere_result)
+    volume_of_sphere_result = volume_of_sphere( 1.0 )
+    assert_equal( 4.19 , volume_of_sphere_result )
   end
 
   # #You can add your own converters
   def test_fahrenheit_to_celsius()
     celsius_result = fahrenheight_to_celsius( 86.0 )
-    assert_equal( 30.0, celsius_result)
+    assert_equal( 30.0, celsius_result )
   end
 
   def test_miles_to_kilometres()
-    kilometres_result = miles_to_kilometres ( 4.00 )
-    assert_equal( 6.44, kilometres_result)
+    kilometres_result = miles_to_kilometres( 4.00 )
+    assert_equal( 6.44, kilometres_result )
   end
 end
